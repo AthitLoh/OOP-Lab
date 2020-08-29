@@ -20,9 +20,9 @@ public static float celsiusToFahrenheit(float Celsius) {
 
 public static void main(String[] args) {
 
-System.out.println(celsiusToFahrenheit(52)); // Expected result?
+    System.out.println(celsiusToFahrenheit(52)); // Expected result?
 
-System.out.println(celsiusToFahrenheit(0)); // Expected result?
+    System.out.println(celsiusToFahrenheit(0)); // Expected result?
 
 }
 
