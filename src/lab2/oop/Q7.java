@@ -19,21 +19,27 @@ public class Q7 {
         }
     }
     public static void printPyramid(int num) {
-        
-        int spc=num+4-1;
-        for(int i=1;i<=num;i++){
-            for(int k=spc;k>=1;k--)
+         
+        for(int i = num; i > 0; i--){
+            for(int j = i;j>1;j--)
             {
                 System.out.print(" ");
             }
-            for(int j=1;j<=i;j++)
+            for(int j = i; j<num; j++)
+            {
                 System.out.print("*");
-            System.out.println();
-            spc--;
-            
+            }
+            for(int j = i; j<=num ; j++)
+            {
+                System.out.print("*");
+            }
+            for(int j = i; j>1; j--)
+            {
+                System.out.print(" ");
+            }           
+         System.out.println("");   
      
-    }
-        
+    }       
   
     }
     public static void main(String[] args) {

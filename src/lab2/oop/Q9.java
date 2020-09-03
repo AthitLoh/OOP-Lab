@@ -10,37 +10,26 @@ import java.util.Scanner;
 
 /**
  *
- * @author User
+ * @author coc
  */
 public class Q9 {
-    public static int numDistinct(int str[],int size){
-    int check = 0;
-
-    for (int i = 0; i < size; i++){
-         boolean characters = false;
-         for (int j = 0; j < i; j++){
-              if (str[j] == str[i]){
-                  characters = true;
-                  break;
-              }
-         }
-
-         if (!characters){
-             check ++;
-         }
-    }
-    System.out.println(check);
-    return 0;
-}
     public static void main(String [] args){
-        Scanner in = new Scanner(System.in);
-        System.out.println("Enter number of variables: ");
+       Scanner in = new Scanner(System.in);
+       System.out.println("Input the number of elements to store in the array: ");
         int numArr = in.nextInt();
         int []str = new int [numArr]; 
         for(int i = 0; i < numArr ; i++){
            System.out.print("Enter num: ");
            str[i] = in.nextInt();
         }
-        numDistinct(str,numArr);
-}
+        System.out.println("The values store into the array are : "); 
+        for(int i = 0; i < numArr ; i++){
+           System.out.print(str[i]);
+        }
+        System.out.println();
+        System.out.println("The values store into the array in reverse are : ");
+        for(int i = numArr-1; i >= 0 ; i--){
+           System.out.print(str[i]);
+        }      
+    }
 }

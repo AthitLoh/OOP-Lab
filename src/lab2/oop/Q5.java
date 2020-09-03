@@ -17,7 +17,8 @@ public class Q5 {
    public static int largestSum(int arr[]){
         int max = 0;
         for(int i = 0; i < arr.length ; ++i){
-            if (arr[i]>max) max = arr[i];
+            if (arr[i]>max) 
+                max = arr[i];
         }
         return max;
     }    
@@ -29,13 +30,13 @@ public class Q5 {
         return  sum/arr.length;
     }
     public static void main(String [] args){   
-        Scanner cin = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
         System.out.println("Enter number of variables: ");
-        int numArr = cin.nextInt();
+        int numArr = in.nextInt();
         int [] arr = new int [numArr]; 
         for(int i = 0; i < numArr ; i++){
            System.out.print("Enter num: ");
-           arr[i] = cin.nextInt();
+           arr[i] = in.nextInt();
         }
         int max = largestSum(arr);
         System.out.println("Max int is "+max);
