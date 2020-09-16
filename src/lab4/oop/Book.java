@@ -14,29 +14,33 @@ public class Book {
     private String author;
     private double price;
     
-    public Book(String t,String a,double p){
-        title = t;
-        author = a;
-        price = p;
+    public Book(String title,String author,double price){
+        this.title = title;
+        this.author = author;
+        this.price = price;
     }
-    public void setTitle(String t){
-        title = t;
+    public void setTitle(String title){
+        this.title = title;
     } //set the title of book.
 
-    public void setAuthor(String a){
-        author = a;
+    public void setAuthor(String author){
+        this.author = author;
     } //set the name of author of book.
 
-    public void setPrice(double p){
-        price = p ;                
+    public void setPrice(double price){
+        this.price = price;                
     } //set the price of book.
 
     public String getTitle(){
        
-        return title;
+        return this.title;
     } //returns the title of book.
 
     public String getAuthor(){
-        return author;
+        return this.author;
     }//returns the author’s name of book.
+
+    public double getPrice(){
+        return this.price;
+    }
 }

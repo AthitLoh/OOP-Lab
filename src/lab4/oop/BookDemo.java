@@ -14,5 +14,6 @@ public class BookDemo {
         Book book1 = new Book("Developing Java Software","Russel Winderand",79.75);
         System.out.println(book1.getTitle());
         System.out.println(book1.getAuthor());
+        System.out.println(book1.getPrice());
     }
 }

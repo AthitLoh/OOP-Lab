@@ -15,37 +15,35 @@ public class Q2 {
     private String name;
     
     public Q2(){
-        channel = 1;
-        brightness = 50;
-        name = "";
+        this(1);
+        
     }
-    public Q2(int c){
-        channel = c;
-        brightness = 50;
-        name = "";
+    public Q2(int channel){
+        this.channel = channel;
+        this.brightness = 50;
+        this.name = "";
     }
     
     // getter
     public int getChannel() {
-        return channel;
+        return this.channel;
     }
     // setter
-    public void setChannel(int c) {
-        if(c != 1) {
-        } else {
-            channel = c;
-        }
+    public void setChannel(int channel) {
+        if(channel == this.channel-1 || channel == this.channel+1) {
+            this.channel = channel;
+        } 
     }
     
     public int getAdaptiveBrightness(){
-        return brightness;
+        return this.brightness;
     }
     
-    public int extBrightness(int ext){
-        
+    public int  getAdaptiveBrightness(int ext){
+        return (this.brightness+ext)/2;
     }
     // getter : It's read-only
     public String getName() {
-        return name;
+        return this.name;
     }
 }
