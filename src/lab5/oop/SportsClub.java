@@ -16,10 +16,11 @@ public class SportsClub extends Club{
     
     @Override
     public int determineBudget() {
-        return (numMember*1000)+(numMember-minNumMember)*100;
+        return ((numMember*1000)+(numMember-minNumMember)*100);
     }
     
-    //public void ChangeName(String newName) {
-        
-    //}
+    @Override
+    public void changeName(String newName){
+        this.clubName = this.clubName;
+    }
 }
