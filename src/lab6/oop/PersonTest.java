@@ -14,11 +14,11 @@ public class PersonTest {
     Person per = new Child(10,100,100);
     per.setFirstName("John");
     System.out.println(per.getFirstName());
-    Person g = per.getGuardian();
+    //Person g = per.getGuardian();
 
-    Parent par1 = new Person();
+    //Parent par1 = new Person();
     Parent par3 = new Parent(0);
-    par3.setChild(per);
+    //par3.setChild(per);
     Child child = new Child(10,100,100);
     par3.setChild(child);
 
@@ -26,7 +26,7 @@ public class PersonTest {
 
     Person per2 = par3.getChild();
     Person per3 = c.getGuardian();
-    Person per4 = per2.getGuardian();
+    //Person per4 = per2.getGuardian();
 
     Person per5 = c;
     }
