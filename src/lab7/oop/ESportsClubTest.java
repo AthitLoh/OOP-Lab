@@ -9,8 +9,12 @@ package lab7.oop;
  *
  * @author coc
  */
-public class Test2 {
+public class ESportsClubTest {
     public static void main(String [] args){
-        
+        ESportsClub e = new ESportsClub("Esport", 100);
+        e.advertise();
+        e.determineBudget();
+        e.getName();
+        //Club c = ESportsClub("Esport", 100);
     }
 }

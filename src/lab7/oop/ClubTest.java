@@ -9,8 +9,15 @@ package lab7.oop;
  *
  * @author coc
  */
-public class Test2 {
+public class ClubTest {
     public static void main(String [] args){
+        SportsClub  s = new SportsClub ("Sport",8);
+        MarketingClub m = new MarketingClub ("Bar",4,7);
         
+        s.advertise();
+        s.changeName("Mook");
+        s.advertise();
+        
+        m.advertise();  
     }
 }

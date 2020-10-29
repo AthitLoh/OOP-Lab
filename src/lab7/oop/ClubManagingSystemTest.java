@@ -9,8 +9,16 @@ package lab7.oop;
  *
  * @author coc
  */
-public class Test2 {
+public class ClubManagingSystemTest {
     public static void main(String [] args){
+        Club stdClub = new Club("Student", 10);
+        stdClub.addMember(190);
+        
+        
+        
+        Club[] cl = {stdClub};
+        ClubManagingSystem sys = new ClubManagingSystem(cl);
+        
         
     }
 }

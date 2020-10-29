@@ -9,8 +9,15 @@ package lab7.oop;
  *
  * @author coc
  */
-public class Test2 {
-    public static void main(String [] args){
+public class MyList <T>{
+    private T [] Number;
+    
+    public MyList(T[] inputArray){
+        this.Number = inputArray;
+    }
+    
+    public void setElement(int i,int element){
         
     }
+    
 }
