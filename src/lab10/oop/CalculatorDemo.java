@@ -11,7 +11,8 @@ import java.awt.event.*;
  * @author User
  */
 public class CalculatorDemo {
-     public static void main(String[] args) {
+    public static void main(String[] args) {
+        //JPanel panel = new JPanel();
         JFrame frame = new JFrame("FrameDemo");
         JLabel welcomeMessage = new JLabel("Welcome!");
             welcomeMessage.setBounds(160, 50, 200, 30);
@@ -30,50 +31,81 @@ public class CalculatorDemo {
     plusButton.addActionListener(new ActionListener() {
         @Override
         public void actionPerformed(ActionEvent e) {
-            //if(num1.getText() && num2.getText()) {
+            try{
+                int n1,n2,ans;
+                n1 = Integer.parseInt(num1.getText());
+                n2 = Integer.parseInt(num2.getText());
+                
+                ans = n1+n2;
                 JDialog dialog = new JDialog(frame, "Pop-up Dialog", false);
-                String plus = num1.getText()+ num2.getText();
-                JTextField plusMessage = new JTextField(plus);
-                dialog.add(plusMessage);
+                JTextField DivisionMessage = new JTextField(Integer.toString(ans));
+                dialog.add(DivisionMessage);
                 dialog.pack();
                 dialog.setVisible(true);
-            //}
+                
+            }catch(Exception e1){
+                System.out.println("Enter valid number");
+            }
         }
     });
     minusButton.addActionListener(new ActionListener() {
         @Override
         public void actionPerformed(ActionEvent e) {
-            //if(num1.getText() && num2.getText()) {
+            try{
+                int n1,n2,ans;
+                n1 = Integer.parseInt(num1.getText());
+                n2 = Integer.parseInt(num2.getText());
+                
+                ans = n1-n2;
                 JDialog dialog = new JDialog(frame, "Pop-up Dialog", false);
-                JTextField minusMessage = new JTextField();
-                dialog.add(minusMessage);
+                JTextField DivisionMessage = new JTextField(Integer.toString(ans));
+                dialog.add(DivisionMessage);
                 dialog.pack();
                 dialog.setVisible(true);
-            //}
+                
+            }catch(Exception e1){
+                System.out.println("Enter valid number");
+            }
         }
     });
     MultiplyButton.addActionListener(new ActionListener() {
         @Override
         public void actionPerformed(ActionEvent e) {
-            //if(num1.getText() && num2.getText()) {
+            try{
+                int n1,n2,ans;
+                n1 = Integer.parseInt(num1.getText());
+                n2 = Integer.parseInt(num2.getText());
+                
+                ans = n1*n2;
                 JDialog dialog = new JDialog(frame, "Pop-up Dialog", false);
-                JTextField MultiplyMessage = new JTextField();
-                dialog.add(MultiplyMessage);
+                JTextField DivisionMessage = new JTextField(Integer.toString(ans));
+                dialog.add(DivisionMessage);
                 dialog.pack();
                 dialog.setVisible(true);
-            //}
+                
+            }catch(Exception e1){
+                System.out.println("Enter valid number");
+            }
         }
     });
     DivisionButton.addActionListener(new ActionListener() {
         @Override
         public void actionPerformed(ActionEvent e) {
-            //if(num1.getText() && num2.getText()) {
+            try{
+                int n1,n2,ans;
+                n1 = Integer.parseInt(num1.getText());
+                n2 = Integer.parseInt(num2.getText());
+                
+                ans = n1/n2;
                 JDialog dialog = new JDialog(frame, "Pop-up Dialog", false);
-                JTextField DivisionMessage = new JTextField("mook");
+                JTextField DivisionMessage = new JTextField(Integer.toString(ans));
                 dialog.add(DivisionMessage);
                 dialog.pack();
                 dialog.setVisible(true);
-            //}
+                
+            }catch(Exception e1){
+                System.out.println("Enter valid number");
+            }
         }
     });
     frame.add(welcomeMessage); frame.add(num1); frame.add(num2); 
@@ -81,6 +113,7 @@ public class CalculatorDemo {
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.setSize(400, 400);
     frame.setLayout(null);
+   
     frame.setVisible(true);
     }
 }
