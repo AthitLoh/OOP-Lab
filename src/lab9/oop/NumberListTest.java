@@ -19,8 +19,17 @@ public class NumberListTest {
             System.out.println(n1.divideElement(3,0));
         }catch(ArrayIndexOutOfBoundsException n){
             System.out.println("Your array are not exist");
+        }        
+        try{
+            Integer [] array = {4,2,8,7};
+            NumberList n1 = new NumberList(array);
+            n1.setElement(0,8);
+            System.out.println(n1.divideElement(2,0));
         }catch(ArithmeticException n2){
             System.out.println("element can't be 0");
+        }
+        finally{
+            System.out.println("All exception handled");
         }
     }
         //n1.setElement(4,8);

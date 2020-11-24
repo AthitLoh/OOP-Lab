@@ -12,7 +12,6 @@ import java.awt.event.*;
  */
 public class CalculatorDemo {
     public static void main(String[] args) {
-        //JPanel panel = new JPanel();
         JFrame frame = new JFrame("FrameDemo");
         JLabel welcomeMessage = new JLabel("Welcome!");
             welcomeMessage.setBounds(160, 50, 200, 30);
